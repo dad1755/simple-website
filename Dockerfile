@@ -10,7 +10,7 @@ RUN mkdir -p /var/cache/nginx/client_temp /var/cache/nginx/proxy_temp /var/cache
     && chmod -R 755 /var/cache/nginx
 
 # Expose port 80 for web traffic
-EXPOSE 80
+EXPOSE 8080
 
 # Start Nginx when the container runs
 CMD ["nginx", "-g", "daemon off;"]
